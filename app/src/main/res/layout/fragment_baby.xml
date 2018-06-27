@@ -59,28 +59,29 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_weight="8"
+                        android:orientation="vertical"
                         android:layout_height="match_parent">
                         <ImageView
                             android:id="@+id/temp_bg"
                             android:layout_width="match_parent"
-                            android:layout_height="250dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="8"
                             android:rotation="270" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:text="Temperature Normal"/>
                     </LinearLayout>
 
 
-                   <LinearLayout
-                       android:layout_width="0dp"
-                       android:layout_weight="2"
-                       android:layout_height="match_parent">
-
-                       <SeekBar
-                           android:layout_width="match_parent"
-                           android:layout_height="match_parent"
-                           android:layout_alignParentRight="false"
-                           android:progress="100"
-                           android:rotation="270" />
-                   </LinearLayout>
-
+                    <SeekBar
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:progress="100"
+                        android:rotation="270" />
 
                 </LinearLayout>
 
