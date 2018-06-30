@@ -44,9 +44,16 @@ public class CurrentVitalsFragment extends android.support.v4.app.Fragment {
 
         });
         ImageView img = (ImageView)v.findViewById(R.id.crying_gif);
-        Glide.with(getContext())
-                .load("https://www.picgifs.com/baby-graphics/laughing/baby-graphics-laughing-658518")
+        Glide.with(this).load("https://www.picgifs.com/baby-graphics/laughing/baby-graphics-laughing-658518")
                 .into(img);
+       /* Glide.with(getContext())
+                .load("https://www.picgifs.com/baby-graphics/laughing/baby-graphics-laughing-658518").as
+                .into(img);
+        return inflater.inflate(R.layout.fragment_baby_current_vitals,null);*/
+
+        /*GlideDrawableImageViewTarget imageViewTarget = new GlideDrawableImageViewTarget(img);
+        Glide.with(this).load(R.raw.sample_gif).into(imageViewTarget);*/
+
         return inflater.inflate(R.layout.fragment_baby_current_vitals,null);
 
     }
