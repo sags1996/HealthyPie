@@ -1,112 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ManageDevicesActivity">
-
+    tools:context=".SplashActivity"
+    android:orientation="vertical">
 
     <android.support.v7.widget.CardView
-        android:id="@+id/baby"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        app:cardBackgroundColor="#EBEBEB"
-        app:cardCornerRadius="15dp" >
-
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baby" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Baby"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="baby_name"
+                    android:textColor="#FFF" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/toddler" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            >
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:src="@drawable/baby"/>
+            android:padding="16dp">
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:text="Baby"
-                android:gravity="center"/>
-        </LinearLayout>
-
-    </android.support.v7.widget.CardView>
-
-    <android.support.v7.widget.CardView
-        android:id="@+id/grandparent"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_toRightOf="@+id/baby"
-        app:cardBackgroundColor="#EBEBEB"
-        app:cardCornerRadius="15dp" >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical" >
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/grandfather" />
-
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Toddler"
+                android:fontFamily="sans-serif"
+                android:textColor="#FFF"
+                android:textSize="18sp" />
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="Senior Citizen" />
-
+                android:layout_height="wrap_content"
+                android:text="Toddler_Name"
+                android:textColor="#FFF" />
 
         </LinearLayout>
-
     </android.support.v7.widget.CardView>
-
     <android.support.v7.widget.CardView
-        android:id="@+id/toddler"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_alignLeft="@+id/baby"
-        android:layout_alignParentBottom="false"
-        android:layout_alignStart="@+id/baby"
-        android:layout_marginTop="190dp"
-        app:cardBackgroundColor="#EBEBEB"
-        app:cardCornerRadius="15dp" >
-
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/grandfather" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            >
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/toddler" />
-
+            android:padding="16dp">
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="Toddler" />
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Seniors"
+                android:textColor="#FFF"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Senior_name"
+                android:textColor="#FFF" />
 
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignEnd="@+id/grandparent"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="25dp"
-        app:srcCompat="@drawable/add_iv" />
 
-</RelativeLayout>
+</LinearLayout>
