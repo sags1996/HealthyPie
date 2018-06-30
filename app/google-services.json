@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "566353447277",
+    "firebase_url": "https://healthypie-b3817.firebaseio.com",
+    "project_id": "healthypie-b3817",
+    "storage_bucket": "healthypie-b3817.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566353447277:android:5763519d7fe32c5b",
+        "android_client_info": {
+          "package_name": "com.example.ashu.healthypie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "566353447277-hfc6hsdclvpvkhg3pe8ck6a4sfvqfgu9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ashu.healthypie",
+            "certificate_hash": "cf91818ac871e802056211a7918f28a777875f87"
+          }
+        },
+        {
+          "client_id": "566353447277-8odkqsj531mnsstdpabrf8p0lo66jppv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgnuy1wdtt5q7Gau8qDrCCpzTi597BjEU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "566353447277-8odkqsj531mnsstdpabrf8p0lo66jppv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
