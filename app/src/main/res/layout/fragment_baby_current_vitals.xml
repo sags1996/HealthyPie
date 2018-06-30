@@ -135,7 +135,7 @@
                         android:max="100"
                         android:progress="0"
                         android:progressDrawable="@drawable/seekbar_progressbar"
-                        android:thumb="@drawable/heart"
+                        android:thumb="@drawable/like1"
                         android:thumbTintMode="multiply"
                         tools:ignore="DuplicateIds" />
                 </RelativeLayout>
@@ -171,7 +171,8 @@
                         android:max="100"
                         android:progress="0"
                         android:progressDrawable="@drawable/seekbar_progressbar"
-                        android:thumbTintMode="multiply" />
+                        android:thumbTintMode="multiply"
+                        />
                 </RelativeLayout>
 
 
