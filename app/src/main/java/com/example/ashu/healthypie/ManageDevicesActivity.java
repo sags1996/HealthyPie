@@ -26,6 +26,6 @@ public class ManageDevicesActivity extends AppCompatActivity {
             }
         });
     }
-     
+
 
 }
