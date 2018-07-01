@@ -1,5 +1,7 @@
 package com.example.ashu.healthypie.BabyFragments;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -72,6 +74,17 @@ public class LiveAudioFragment extends Fragment {
     private void inflateList(ArrayList<myWord> word) {
         liveaudioadapter itemsAdapter = new liveaudioadapter(getActivity(), word);
         listview.setAdapter(itemsAdapter);
+
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        Uri phoneCall = Uri.fromParts("sip", "ayush9398" + "@" + "sip.linphone.org", "");
+        Intent caller = new Intent(Intent.ACTION_CALL, phoneCall);
+        startActivity(caller);
+
 
     }
 }

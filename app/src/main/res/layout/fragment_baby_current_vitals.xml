@@ -31,8 +31,7 @@
                         android:id="@+id/crying_gif"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="8"
-                        android:src="@drawable/cryingemoji"/>
+                        android:layout_weight="8" />
 
                     <TextView
                         android:id="@+id/crying_status_tv"
