@@ -64,8 +64,12 @@ public class LiveAudioFragment extends Fragment {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Uri phoneCall = Uri.fromParts("sip", "ayush9398" + "@" + "sip.linphone.org", "");
+                Intent caller = new Intent(Intent.ACTION_CALL, phoneCall);
+                startActivity(caller);
                 word.add(new myWord("Name", "One", R.drawable.speak2));
                 inflateList(word);
+
             }
         });
 
@@ -77,14 +81,5 @@ public class LiveAudioFragment extends Fragment {
 
     }
 
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        Uri phoneCall = Uri.fromParts("sip", "ayush9398" + "@" + "sip.linphone.org", "");
-        Intent caller = new Intent(Intent.ACTION_CALL, phoneCall);
-        startActivity(caller);
-
-
-    }
+   
 }
