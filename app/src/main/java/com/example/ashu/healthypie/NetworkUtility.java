@@ -31,8 +31,6 @@ public class NetworkUtility {
     public static String getResponseFromHttpUrl(URL url) throws Exception {
         HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
 
-
-
         String JSONFILE = null;
         try {
 
