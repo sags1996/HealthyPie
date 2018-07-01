@@ -1,6 +1,8 @@
 package com.example.ashu.healthypie;
 
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -27,6 +29,7 @@ public class BabyActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
+    public static boolean InternetStatus;
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -44,6 +47,18 @@ public class BabyActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+    public  boolean checkInternet(){
+        boolean internetStatus=true;
+        ConnectivityManager connec=(ConnectivityManager)getSystemService(getBaseContext().CONNECTIVITY_SERVICE);
+        if(connec.getNetworkInfo(0).getState()== android.net.NetworkInfo.State.CONNECTED||connec.getNetworkInfo(1).getState()==android.net.NetworkInfo.State.CONNECTED
+                ||connec.getNetworkInfo(0).getState()== NetworkInfo.State.CONNECTING||connec.getNetworkInfo(1).getState()== NetworkInfo.State.CONNECTING)
+            internetStatus=true;
+        else if(connec.getNetworkInfo(0).getState()== NetworkInfo.State.DISCONNECTED||connec.getNetworkInfo(1).getState()== NetworkInfo.State.DISCONNECTED)
+            internetStatus=false;
+
+        return internetStatus;
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
