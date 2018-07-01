@@ -23,13 +23,6 @@ public class CurrentVitalsFragment extends android.support.v4.app.Fragment {
     SeekBar humSeekBar,tempSeekBar;
     HashMap<String, String> mdata;
 
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        final URL DetailSearchUrl = NetworkUtility.buildUrl();
-        new DetailQueryTask().execute(DetailSearchUrl);
-    }
 
 
     @Nullable
@@ -73,6 +66,15 @@ public class CurrentVitalsFragment extends android.support.v4.app.Fragment {
 */
         return inflater.inflate(R.layout.fragment_baby_current_vitals,null);
 
+    }
+
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        final URL DetailSearchUrl = NetworkUtility.buildUrl();
+        new DetailQueryTask().execute(DetailSearchUrl);
     }
 
 
